@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 
 async function main(){
-    area = "jingkaiqub"
+    area = "binhuxinqu"
     years = [...Array(10).keys()].map(i=>(i+2011).toString())
     for (let idx = 0; idx < years.length; idx++) {
         var url = 'https://www.anjuke.com/fangjia/hf'+ years[idx]+'/'+area;
