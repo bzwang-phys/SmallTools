@@ -6,8 +6,8 @@ import argparse
 from time import gmtime, strftime
 
 
-parser = argparse.ArgumentParser("Specify the network card")
-parser.add_argument("ethn")
+parser = argparse.ArgumentParser()
+parser.add_argument("ethn", help="Specify the network card")
 parser.add_argument("-b", "--byte", action="store_true", help="print the results with byte/s.")
 parser.add_argument("-a", "--average", action="store_true", help="print the average data in 5s.")
 args = parser.parse_args()
